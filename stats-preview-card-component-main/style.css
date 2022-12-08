@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    /* Primary colors */
+    --main-color: hsl(233, 47%, 7%);
+    --card-background:hsl(244, 38%, 16%);
+    --accent : hsl(277, 64%, 61%);
+    /*Neutral color*/
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph:hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-color);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main .container  {
+    width: 991px;
+    height: 400px;
+    background-color: var(--card-background);
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    display: flex;
+    gap: 40px;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+main .container  .left-side{
+    flex-basis: 50%;
+    padding-left:3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+main .left-side h1{
+    color: var(--main-heading);
+}
+main .left-side h1 span{
+    color: var(--accent);
+}
+main .left-side p{
+    font-size: 15px;
+    color: var(--main-paragraph);
+    line-height: 1.5rem;
+    padding-bottom: 1.3em;
+}
+main .left-side .about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .left-side .about .plan    {
+    text-align: center;
+
+}
+
+main .left-side .about span:first-child{
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--main-paragraph);
+}
+main .left-side .about span:last-child{
+    padding:0 10px;
+    font-size: 0.8em;
+    color: var(--stat-headings);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+main .container .right-side img{
+    width:100%;
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+    
+} 
+main .container .right-side{
+    position: relative;
+    
+}
+main .container .right-side::before{
+    content: " ";
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277deg 100% 31% / 51%);
+}
+
+
+
+
+
+
+
